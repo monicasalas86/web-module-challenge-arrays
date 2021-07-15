@@ -132,11 +132,13 @@ Use the getFlavorByIndex function below to do the following:
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 // 2 params - the first is an array, the second is a number which will be the index
-function getFlavorByIndex(/*your code here*/){
+function getFlavorByIndex(array, number){
   // returning the index at the given number
-  // return array[index]
-  /*your code here*/
+  array[number];
+  return array[number];
 }
+
+console.log('task 5', getFlavorByIndex(originalFlavors, 4));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
