@@ -45,10 +45,13 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-  /*your code here*/
-}    
+const copyFlavors = [...originalFlavors];
 
+function copy(array){
+  return copyFlavors;
+  // return a copy of the original using the spread operator
+}    
+console.log('task 1', copy());
 
 
 
@@ -63,10 +66,22 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
 
-
-function is31Flavors(/*your code here*/){
- /*your code here*/
+function is31Flavors(array){
+  if(array.length === 31){
+    return true;
+  }else if(array.length < 31){
+    return false;
+  }else if(array.length > 31){
+    return false;
+  }
+  return true;
 }
+
+console.log('task 2', is31Flavors(originalFlavors));
+  
+
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -80,8 +95,11 @@ Use the addFlavor function below to do the following:
   For example: addFlavor(originalFlavors, "Rainbow Sherbert") should return the array ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"]
 */
 
-
+// 2 params the first will be an array the second will be a string
 function addFlavor(/*your code here*/){
+  // need to add the string to the front of the array with .unshift
+
+  // return the array
  /*your code here*/
 }
 
@@ -96,8 +114,10 @@ Use the removeLastFlavor function below to do the following:
 
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
-
+// 1 parameter which is an array
 function removeLastFlavor(/*your code here*/){
+  // remove the last item from the array - using .pop()
+  // return the array
  /*your code here*/
 }
 
@@ -113,8 +133,10 @@ Use the getFlavorByIndex function below to do the following:
 
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
-
+// 2 params - the first is an array, the second is a number which will be the index
 function getFlavorByIndex(/*your code here*/){
+  // returning the index at the given number
+  // return array[index]
   /*your code here*/
 }
 
